@@ -1,4 +1,4 @@
-.skill-container, span {  
+.skill-container span {  
   color: var(--txt-primary);
   padding: 5px 10px;
   border: 1px solid var(--border-color);

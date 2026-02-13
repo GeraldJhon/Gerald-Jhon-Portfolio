@@ -12,42 +12,6 @@ main {
       "list list list"
       "training-picture training-picture training-picture";
 }
-.about-me{
-  grid-area: about-me;
-}
-
-.education{
-  grid-area: education;
-}
-
-.project{
-  grid-area: project;
-}
-
-.experience{
-  grid-area: experience;
-}
-
-.certfication{
-  grid-area: certfication;
-}
-
-.tech-stack{
-  grid-area: tech-stack;
-}
-
-.skill{
-  grid-area: other-skill;
-}
-
-.list{
-  grid-area: list;
-}
-
-.training-picture{
-  grid-area: training-picture;
-}
-
 
 main section {
   border-radius: var(--border-radius);
@@ -107,9 +71,6 @@ main section:hover {
   font-weight: 500;
   transition: background-color var(--transition-speed);
 }
-
-
-
 
 .visually-hidden {
   position: absolute;
@@ -430,3 +391,40 @@ footer > p {
 }
 
 
+
+
+.about-me{
+  grid-area: about-me;
+}
+
+.education{
+  grid-area: education;
+}
+
+.project{
+  grid-area: project;
+}
+
+.experience{
+  grid-area: experience;
+}
+
+.certfication{
+  grid-area: certfication;
+}
+
+.tech-stack{
+  grid-area: tech-stack;
+}
+
+.skill{
+  grid-area: other-skill;
+}
+
+.list{
+  grid-area: list;
+}
+
+.training-picture{
+  grid-area: training-picture;
+}
