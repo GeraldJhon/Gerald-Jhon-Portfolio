@@ -2,7 +2,6 @@
   /* Colors */
   --bg-primary: #ffffff;
   --txt-primary: #000000;
-  --txt-secondary: #808080;
   --button-color: #000000;
   --button-text: #ffffff;
   --btn-color: transparent;
@@ -18,7 +17,6 @@
 body.dark-mode {
   --bg-primary: #000000;
   --txt-primary: #ffffff;
-  --txt-secondary: #b0b0b0;
   --button-color: #ffffff;
   --button-text: #000000;
   --btn-color: transparent;
@@ -66,7 +64,7 @@ body {
 
 .time-clock p {
   font-size: 1.2rem;
-  color: var(--txt-secondary);
+  color: var(--txt-primary);
 }
 
 header {
@@ -110,7 +108,7 @@ header section{
   right: 1px;
   max-width: 400px;
   font-style: italic;
-  color: var(--txt-secondary);
+  color: var(--txt-primary);
   font-size: 1rem;
 }
 
@@ -180,7 +178,7 @@ body.dark-mode .profile-image:hover img {
 .profile p {
   align-items: center;
   display: flex;
-  color: var(--txt-secondary);
+  color: var(--txt-primary);
 }
 
 .btn-profile {
@@ -200,7 +198,7 @@ body.dark-mode .profile-image:hover img {
 }
 
 .btn-profile a:hover {
-  background-color: var(--txt-secondary);
+  background-color: var(--txt-primary);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

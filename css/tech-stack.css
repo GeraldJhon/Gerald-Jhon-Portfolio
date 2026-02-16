@@ -1,14 +1,26 @@
 a{
+    display: flex;
     color: black;
+    align-items: center;
+    gap: 5px;
 }
+
+.back-icon {
+  display: flex;
+  color: var(--button-color);
+  font-size: 35px;
+  transform: rotate(180deg);
+  align-items: center;
+}
+
 
 .tech-stack-section h1{
     margin-bottom: 0.5rem;
 }
-
+/* Tech Stack Styles */
 .front-end-stack span,
-.back-end-stack span
-.version-control-stack, span{  
+.back-end-stack span,
+.version-control-stack span{  
   color: var(--txt-primary);
   padding: 5px 10px;
   border: 1px solid var(--border-color);

@@ -3,40 +3,12 @@ a{
     color: black;
     align-items: center;
     gap: 5px;
-    margin-left: 50px;
 }
 
 .back-icon {
   display: flex;
-  height: 50px;
   color: var(--button-color);
   font-size: 35px;
   transform: rotate(180deg);
   align-items: center;
-}
-
-.skill-section h1{
-    margin-bottom: 0.5rem;
-}
-
-.skill-list span{  
-  color: var(--txt-primary);
-  padding: 5px 10px;
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius);
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: background-color var(--transition-speed);
-  margin-right: 0.3rem;
-}
-
-.skill-list{
-    margin-bottom: 3rem;
-}
-.back-icon {
-  display: inline-block;
-  height: 50px;
-  color: var(--button-color);
-  font-size: 35px;
-  transform: rotate(180deg);
 }

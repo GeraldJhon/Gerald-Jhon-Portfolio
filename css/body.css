@@ -31,7 +31,7 @@ main section:hover {
 .education-item ul {
   margin-left: 2rem;
   margin-top: 0.5rem;
-  color: var(--txt-secondary);
+  color: var(--txt-primary);
 }
 
 .education-item ul li {
@@ -58,16 +58,16 @@ main section:hover {
   color: var(--txt-primary);
 
 }
-.front-end-stack,
-.back-end-stack {
+.front-end,
+.back-end{
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 0.5rem;
 }
 
-.front-end-stack span,
-.back-end-stack span {  
+.front-end span,
+.back-end span {  
   color: var(--txt-primary);
   padding: 5px 10px;
   border: 1px solid var(--border-color);
@@ -77,6 +77,21 @@ main section:hover {
   transition: background-color var(--transition-speed);
 }
 
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-list span{
+  color: var(--txt-primary);
+  padding: 5px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color var(--transition-speed);
+  }
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -286,7 +301,7 @@ main section:hover {
 }
 
 .lightbox-btn:hover {
-  background-color: var(--txt-secondary);
+  background-color: var(--txt-primary);
   transform: scale(1.05);
 }
 
@@ -317,7 +332,7 @@ main section:hover {
 }
 
 .close-btn:hover {
-  color: var(--txt-secondary);
+  color: var(--txt-primary);
 }
 
 .close-btn:focus {
@@ -375,8 +390,7 @@ footer > p {
   font-weight: 500;
 }
 
-.view-icon {
-  height: 50px;
+.view-icon {  
   color: var(--button-color);
   font-size: 35px;
 }
