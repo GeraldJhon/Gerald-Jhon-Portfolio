@@ -1,0 +1,22 @@
+
+.container {
+  width: 100%;
+  max-width: var(--maxwidth);
+  padding: 20px;
+}
+
+a{
+    display: flex;
+    color: black;
+    align-items: center;
+    gap: 5px;
+    margin-left: 50px;
+}
+
+.back-icon {
+  display: flex;
+  color: var(--button-color);
+  font-size: 35px;
+  transform: rotate(180deg);
+  align-items: center;
+}

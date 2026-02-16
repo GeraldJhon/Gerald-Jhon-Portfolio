@@ -1,4 +1,3 @@
-
 main {
   display: grid;
   gap: 1rem;
@@ -8,7 +7,7 @@ main {
       "about-me about-me education"
       "project project education"
       "experience experience education"
-      "certification tech-stack other-skill"
+      "certification tech-stack skill"
       "list list list"
       "training-picture training-picture training-picture";
 }
@@ -43,7 +42,7 @@ main section:hover {
   display: inline-block;
 }
 
-.certfication-header,
+.certification-header,
 .project-header,
 .tech-stack-header,
 .skill-header{
@@ -52,7 +51,13 @@ main section:hover {
   align-items: center;
   color: var(--txt-primary);
 }
+.experience-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--txt-primary);
 
+}
 .front-end-stack,
 .back-end-stack {
   display: flex;
@@ -95,30 +100,19 @@ main section:hover {
   box-shadow: var(--box-shadow-hover);
 }
 
-.goals,
-.organization,
-.social-container,
-.contact {
+.card-base {
   min-height: 160px;
   min-width: 220px;
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  padding: 8px;
   transition: box-shadow var(--transition-speed);
 }
 
-.goals:hover,
-.organization:hover,
-.social-container:hover,
-.contact:hover {
+.card-base:hover {
   box-shadow: var(--box-shadow-hover);
 }
 
-.goals{
-  padding: 7px;
-}
-
-.organization {
+.goals, .organization, .social-container, .contact {
   padding: 7px;
 }
 
@@ -127,11 +121,7 @@ main section:hover {
   margin-left: 10px;
 }
 
-.social-container {
-  padding: 7px;
- 
-}
-.social-container > h4 {
+.social-container > h3 {
   margin-bottom: 0.5rem;
 }
 .social-links {
@@ -144,7 +134,7 @@ main section:hover {
 .social-links > a {
   display: flex;
   align-items: center;
-  border: 1px solid var(--border-color); /* Remove border */
+  border: 1px solid var(--border-color);
   font-size: 12px;
   color: var(--txt-primary);
   border-radius: var(--border-radius);
@@ -172,18 +162,14 @@ main section:hover {
   margin: 0 10px;
 }
 
-.contact {
-  padding: 7px;
-}
-
-.contact > h4 {
+.contact > h3 {
   margin-bottom: 0.5rem;
 }
 
 .contact-links > a {
   display: flex;
   align-items: center;
-  border: 1px solid var(--border-color); /* Remove border */
+  border: 1px solid var(--border-color);
   text-decoration: none;
   font-size: 12px;
   color: var(--txt-primary);
@@ -191,12 +177,11 @@ main section:hover {
   margin-bottom: 5px;
   padding: 5px 10px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-  transition: var(--box-shadow-hover);
   font-weight: 500;
-  transition: var(--ts-box-shadow);
+  transition: box-shadow var(--transition-speed);
 }
 
-.contact > a:hover{
+.contact-links > a:hover{
   box-shadow: var(--box-shadow-hover);
 }
 
@@ -390,9 +375,11 @@ footer > p {
   font-weight: 500;
 }
 
-
-
-
+.view-icon {
+  height: 50px;
+  color: var(--button-color);
+  font-size: 35px;
+}
 .about-me{
   grid-area: about-me;
 }
@@ -409,8 +396,8 @@ footer > p {
   grid-area: experience;
 }
 
-.certfication{
-  grid-area: certfication;
+.certification{
+  grid-area: certification;
 }
 
 .tech-stack{
@@ -418,7 +405,7 @@ footer > p {
 }
 
 .skill{
-  grid-area: other-skill;
+  grid-area: skill;
 }
 
 .list{

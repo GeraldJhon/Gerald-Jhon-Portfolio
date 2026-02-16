@@ -16,6 +16,7 @@ a{
   font-size: 0.9rem;
   font-weight: 500;
   transition: background-color var(--transition-speed);
+  margin-right: 0.3rem;
 }
 
 .front-end-stack{
@@ -40,4 +41,8 @@ a{
 
 .version-control-stack h2{
     margin-bottom: 0.5rem;
+}
+
+.span{
+    gap: 0.5rem;
 }

@@ -103,7 +103,6 @@ header section{
   box-shadow: var(--box-shadow-hover);
 }
 
-
 .quotes {
   position: absolute;
   text-align: right;
@@ -156,12 +155,12 @@ header section{
 
 /* Light mode hover */
 .profile-image:hover img {
-  content: url("/assets/Img/Profile hover.png");
+  content: url("/assets/Img/Profile-hover.png");
 }
 
 /* Dark mode hover */
 body.dark-mode .profile-image:hover img {
-  content: url("/assets/Img/Darkmode\ Profile.png");
+  content: url("/assets/Img/Darkmode-Profile.png");
 }
 
 .profile-info h2{
@@ -218,27 +217,27 @@ body.dark-mode .profile-image:hover img {
 
 /* Enter Icons (PNG) */
 .project-header img,
-.certfication-header img,
+.certification-header img,
 .tech-stack-header img,
-.other-skill-header img {
+.skill-header img {
   width: 24px;
-  height: 24px;
-  transition: filter 0.3s ease, transform 0.3s ease;
+  height: 24px; 
+  transition: filter var(--transition-speed), transform var(--transition-speed);
 }
 
 /* Dark mode - invert to white */
 body.dark-mode .project-header img,
-body.dark-mode .certfication-header img,
+body.dark-mode .certification-header img,
 body.dark-mode .tech-stack-header img,
-body.dark-mode .other-skill-header img {
+body.dark-mode .skill-header img {
   filter: invert(1);
 }
 
 /* Hover effect */
 .project-header a:hover img,
-.certfication-header a:hover img,
+.certification-header a:hover img,
 .tech-stack-header a:hover img,
-.other-skill-header a:hover img {
+.skill-header a:hover img {
    transform: translateY(-5px);
 }
 
@@ -248,7 +247,7 @@ body.dark-mode .other-skill-header img {
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  transition: filter var(--transition-speed);
+  transition: filter var(--transition-speed), transform var(--transition-speed);
 }
 
 body.dark-mode .profile p img,
