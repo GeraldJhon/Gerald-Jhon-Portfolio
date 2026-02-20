@@ -4,9 +4,9 @@ main {
   position: relative;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
-      "about-me about-me education"
-      "project project education"
-      "experience experience education"
+      "about-me about-me experience"
+      "project project experience"
+      "education education experience"
       "certification tech-stack skill"
       "list list list"
       "training-picture training-picture training-picture";
@@ -76,7 +76,9 @@ main section:hover {
   font-weight: 500;
   transition: background-color var(--transition-speed);
 }
-
+.front-end{
+  margin-bottom: 0.5rem;
+}
 .skill-list {
   display: flex;
   flex-wrap: wrap;
@@ -92,6 +94,7 @@ main section:hover {
   font-weight: 500;
   transition: background-color var(--transition-speed);
   }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -394,6 +397,8 @@ footer > p {
   color: var(--button-color);
   font-size: 35px;
 }
+
+
 .about-me{
   grid-area: about-me;
 }
