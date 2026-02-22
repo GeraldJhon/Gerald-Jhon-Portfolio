@@ -12,3 +12,62 @@ a{
   transform: rotate(180deg);
   align-items: center;
 }
+
+.certification-container {
+  position: static;
+  margin-top: 1rem;
+  
+}
+
+.certification-container ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+
+}
+
+.certification-container li {
+  display: inline-block;
+  padding: 1rem; 
+  justify-content: center;
+  list-style: none;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+.certification-container li .legend{
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0;
+  justify-content: flex-end;
+  color: var(--text-primary);
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.networking-icon {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #7fffd4;
+}
+
+.ncii-css {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #87ceeb;
+}
+
+.certification-container li img {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  border-radius: 10%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border: 2px solid var(--border-color);
+}
+.certification-container li img:hover {
+  transform: scale(1.05);
+}

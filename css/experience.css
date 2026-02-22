@@ -14,3 +14,16 @@ a{
   transform: rotate(180deg);
   align-items: center;
 }
+
+.certification-container {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.certification-container li img {
+  width: 75px;
+  height: 75px;
+  border-radius: 10%;
+  object-fit: cover;
+}

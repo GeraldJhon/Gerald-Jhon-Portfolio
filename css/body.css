@@ -38,6 +38,29 @@ main section:hover {
   margin-bottom: 0.3rem;
 }
 
+.certification-list{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 100%;
+}
+
+.certification-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.certification-container li img {
+  width: 75px;
+  height: 75px;
+  border-radius: 10%;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+}
+
 .projects {
   display: inline-block;
 }
