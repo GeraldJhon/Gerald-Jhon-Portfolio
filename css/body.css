@@ -6,8 +6,8 @@ main {
   grid-template-areas: 
       "about-me about-me experience"
       "project project experience"
-      "education education experience"
-      "certification tech-stack skill"
+      "education education certification"
+      "tech-stack skill skill"
       "list list list"
       "training-picture training-picture training-picture";
 }
@@ -23,6 +23,46 @@ main section:hover {
   box-shadow: var(--box-shadow-hover);
 }
 
+.project-list{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.project-list li {
+  display: flex;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  max-height: 250px;
+  flex-direction: column;
+}
+.project-list li:hover {
+  box-shadow: var(--box-shadow-hover);
+  transition: var(--transition-speed);
+} 
+.project .project-list img {
+  border: 1px solid var(--border-color);
+  width: 250px;
+  height: 150px;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+  transition: transform var(--transition-speed);
+}
+.project-list .project-container{
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  max-width: 250px;
+}
+.project-container, h2, p{
+  margin: 10px 0;
+  color: var(--txt-primary);
+  text-align: center;
+}
 .education {
   display: block;
   padding: 1rem 2rem;
@@ -61,10 +101,6 @@ main section:hover {
   border: 1px solid var(--border-color);
 }
 
-.projects {
-  display: inline-block;
-}
-
 .certification-header,
 .project-header,
 .tech-stack-header,
@@ -74,6 +110,7 @@ main section:hover {
   align-items: center;
   color: var(--txt-primary);
 }
+
 .experience-header{
   display: flex;
   justify-content: space-between;
