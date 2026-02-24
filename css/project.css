@@ -1,0 +1,141 @@
+a {
+  display: flex;
+  color: black;
+  align-items: center;
+  gap: 5px;
+}
+
+.back-icon {
+  display: flex;
+  color: var(--button-color);
+  font-size: 35px;
+  transform: rotate(180deg);
+  align-items: center;
+}
+
+.project-list {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+  align-items: start;
+  /* Desktop: 4 columns */
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.project-list .project-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  height: 100%;
+}
+
+.project-container {
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--txt-primary);
+  text-align: center;
+  overflow: hidden;
+}
+
+.project-container:hover {
+  box-shadow: var(--box-shadow-hover);
+  transition: var(--transition-speed);
+}
+
+.project .project-list img {
+  border: 1px solid var(--border-color);
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  transition: transform var(--transition-speed);
+}
+
+.view-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 8px 12px;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.view-project a{
+  color: var(--txt-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 3px 20px;
+}
+
+.view-project a:hover {
+  color: var(--txt-primary);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.view-project a:active {
+  background-color: var(--button-color);
+  color: var(--button-text);
+}
+
+/* ── Responsive ───────────────────────── */
+
+/* Laptop */
+@media (max-width: 1024px) {
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project .project-list img {
+    max-height: 160px;
+  }
+}
+
+/* Large mobile */
+@media (max-width: 425px) {
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+
+  .project .project-list img {
+    max-height: 130px;
+  }
+
+  .view-project {
+    padding: 6px 8px;
+  }
+
+  .view-project p {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 375px) {
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project .project-list img {
+    max-height: 200px;
+  }
+}
+
+/* Tiny mobile */
+@media (max-width: 320px) {
+  .project-list {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
